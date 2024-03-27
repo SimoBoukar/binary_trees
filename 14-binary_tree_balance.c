@@ -42,7 +42,9 @@ int binary_tree_balance(const binary_tree_t *tree)
 	size_t balance;
 
 	if (!tree)
+	{
 		return (0);
+	}
 	else
 	{
 		l = binary_subtree_height(tree->left);
