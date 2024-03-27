@@ -4,7 +4,7 @@
  * binary_tree_is_full - checks if a binary tree is full.
  * @tree: binary_tree.
  *
- * return: 1 if its full, otherwise 0;
+ * Return: 1 if its full, otherwise 0;
  *
  */
 
