@@ -27,9 +27,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 			lfull = binary_tree_is_full(tree->left);
 			rfull = binary_tree_is_full(tree->right);
 			if (l == r && (lfull && rfull))
+			{
 				return (1);
+			}
 			else
 				return (0);
 		}
 	}
+	return (0);
 }
