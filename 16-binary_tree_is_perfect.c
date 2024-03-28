@@ -98,6 +98,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	size_t lfull;
 	size_t rfull;
   size_t size;
+  size_t check;
 
 	if (!tree)
 	{
@@ -112,7 +113,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 			r = binary_tree_height(tree->right);
 			lfull = binary_tree_is_full(tree->left);
 			rfull = binary_tree_is_full(tree->right);
-			if (l == r && (lfull && rfull) && (size == (2 ^ (l + 2)) - 1))
+      check = (1 << (l + 2)) - 1;
+
+			if (l == r && (lfull && rfull) && (size == check))
 			{
 				return (1);
 			}
