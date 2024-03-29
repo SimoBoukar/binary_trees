@@ -2,13 +2,13 @@
 #include "102-binary_tree_is_complete.c"
 
 /**
- * check_heap - goes through a binary tree cheking ropt as max value
+ * check_hea_maxp - goes through a binary tree cheking ropt as max value
  * @tree: pointer to the root
  * Return: 1 if all nodes are max, 0 in other cases
  */
 int check_heap_max(const binary_tree_t *tree)
 {
-	size_t temp1 = 1, temp2 = 1;
+	int temp1 = 1, temp2 = 1;
 
 	if (!tree)
 		return (0);
