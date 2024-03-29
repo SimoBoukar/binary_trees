@@ -73,6 +73,6 @@ size_t binary_subtree_height(const binary_tree_t *tree);
 void binary_tree_print(const binary_tree_t *tree);
 void bt_lvlorder(const binary_tree_t *tree, void (*func)(int), size_t lvl);
 int bst_check(const binary_tree_t *tree, int k, int m);
-
+int check_heap_max(const binary_tree_t *tree);
 
 #endif
