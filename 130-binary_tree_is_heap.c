@@ -8,7 +8,7 @@
  */
 int check_heap_max(const binary_tree_t *tree)
 {
-	int temp1, temp2;
+	int temp1 = 1, temp2 = 1;
 
 	if (!tree)
 		return (0);
