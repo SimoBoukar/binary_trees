@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_height - checks if a binary tree is full.
+ * binary_tree_height - checks the height.
  * @tree: binary_tree.
  *
  * Return: 1 if its full, otherwise 0;
@@ -23,8 +23,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 			return (1);
 		if (tree->left && tree->right)
 		{
-			l = binary_tree_is_full(tree->left);
-			r = binary_tree_is_full(tree->right);
+			l = binary_tree_is_height(tree->left);
+			r = binary_tree_is_height(tree->right);
 			return (l && r);
 		}
 		return (0);
