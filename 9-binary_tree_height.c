@@ -1,14 +1,14 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_full - checks if a binary tree is full.
+ * binary_tree_is_height - checks if a binary tree is full.
  * @tree: binary_tree.
  *
  * Return: 1 if its full, otherwise 0;
  *
  */
 
-int binary_tree_is_full(const binary_tree_t *tree)
+size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t l;
 	size_t r;
